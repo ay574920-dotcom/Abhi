@@ -1,0 +1,94 @@
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a; /* Dark background for a tech feel */
+            color: #e5e7eb; /* Light gray text */
+        }
+        /* Style for the active navigation link */
+        .nav-link.active {
+            color: #3b82f6;
+            font-weight: 600;
+        }
+        /* Hide sections by default */
+        main > section {
+            display: none;
+        }
+        /* Show the active section */
+        main > section.active {
+            display: block;
+        }
+        /* Custom card styling */
+        .card {
+            background-color: #1f2937;
+            border: 1px solid #374151;
+            border-radius: 0.75rem;
+            padding: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        /* Custom button styling */
+        .btn {
+            display: inline-block;
+            background-color: #3b82f6;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #2563eb;
+        }
+        /* Custom input field styling */
+        .form-input {
+            width: 100%;
+            background-color: #374151;
+            border: 1px solid #4b5563;
+            color: #e5e7eb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+        }
+        /* Animation for question transition */
+        .survey-question {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+        .survey-question.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .form-link {
+            color: #3b82f6;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        /* AI Chat styles */
+        .chat-message {
+            padding: 0.75rem 1rem;
+            border-radius: 0.75rem;
+            margin-bottom: 0.5rem;
+            max-width: 80%;
+            line-height: 1.5;
+        }
+        .user-message {
+            background-color: #3b82f6;
+            color: white;
+            align-self: flex-end;
+            border-bottom-right-radius: 0.25rem;
+        }
+        .ai-message {
+            background-color: #374151;
+            color: #e5e7eb;
+            align-self: flex-start;
+            border-bottom-left-radius: 0.25rem;
+        }
